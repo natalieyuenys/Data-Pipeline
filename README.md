@@ -1,1 +1,9 @@
 # Data-Pipeline
+
+This project is designed for front‑office clients who rely on accurate fundamentals to make screening and valuation decisions in real time. 
+
+A portfolio manager may start the day by running a universe screen on the terminal for stocks with reasonable price‑to‑earnings ratios, positive EPS growth over the last three years, and manageable leverage measured by the Debt/Equity ratio. If EPS, net income, or equity are mis‑reported due to stale filings, unit errors, or incorrect mapping, the screen can either exclude genuinely attractive names or include highly risky ones, distorting portfolio construction and risk limits.
+
+At the same time, a sell‑side equity analyst uses the same underlying data to build discounted cash flow and relative valuation models, where free cash flow margins, returns on equity, and capital structure assumptions are all anchored on reported financial statements. Inconsistent or erroneous items such as negative total equity, implausible margin spikes, or mismatched assets and liabilities can propagate through these models, leading to misleading target prices and recommendations. 
+
+This project simulates a vendor‑style data pipeline for equity fundamentals, implementing accounting‑identity checks, outlier and range tests, and time‑series consistency rules to automatically flag suspect records before they reach the end user. By surfacing a clear “data issues” report alongside a clean dataset, the project aims to reduce manual reconciliation work for both portfolio managers and analysts, and to increase confidence that the screening and valuation tools they rely on are backed by robust, high‑quality data.
